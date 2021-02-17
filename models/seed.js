@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-  const Seed = sequelize.define("Seed", {
+  const Seed = sequelize.define("seed", {
     id: {
       allowNull: false,
       autoIncrement: true,
@@ -35,7 +35,7 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.INTEGER
     },
     plantingDepth: {
-      type: Sequelize.INTEGER
+      type: Sequelize.FLOAT
     },
     description: {
       type: Sequelize.TEXT

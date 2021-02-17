@@ -36,6 +36,7 @@ require('./routes/role.routes')(app);
 require("./routes/garden.routes")(app)
 require("./routes/seed.routes")(app)
 require("./routes/plant.routes")(app)
+require("./routes/plantImage.routes")(app)
 
 
 // set port, listen for requests

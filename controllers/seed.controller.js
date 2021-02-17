@@ -1,5 +1,5 @@
 const db = require("../models");
-const Seed = db.Seed;
+const Seed = db.seed;
 const Garden = db.garden; 
 const Op = db.Sequelize.Op;
 const User = db.user;
@@ -55,16 +55,14 @@ exports.findAll = (req, res) => {
    
     Seed.findAll( 
       { 
-    //   include: [
-    //     {
-    //       model: User,
-    //       as: "Users",
-    //       attributes: ["id", "firstName", "lastName", "email"],
-    //       through: {
-    //         attributes: [],
-    //       }
-    //     },
-    //   ],
+        include: User
+          // {
+          //   model: User,
+          //   attributes: ["email"],
+          //   through: {
+          //     attributes: [],
+          //   }
+          // },
       }
       )
       .then(data => {
@@ -84,16 +82,14 @@ exports.findOne = (req, res) => {
     const id = req.params.id;
 
     Seed.findByPk(id, {
-    //   include: [
-    //     {
-    //       model: Garden,
-    //       as: "gardens",
-    //       attributes: ["name"],
-    //       through: {
-    //         attributes: [],
-    //       }
-    //     },
-    //   ],
+      include: User
+      // {
+      //   model: User,
+      //   attributes: ["email"],
+      //   through: {
+      //     attributes: [],
+      //   }
+      // },
     })
       .then(data => {
         res.send(data);

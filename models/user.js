@@ -1,6 +1,6 @@
 module.exports = (sequelize, Sequelize) => {
   var bcrypt = require('bcrypt-nodejs');
-  const User = sequelize.define("User", {
+  const User = sequelize.define("user", {
     id: {
       allowNull: false,
       autoIncrement: true,

@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-  const Plant = sequelize.define("Plant", {
+  const Plant = sequelize.define("plant", {
     id: {
       allowNull: false,
       autoIncrement: true,
@@ -17,10 +17,15 @@ module.exports = (sequelize, Sequelize) => {
       allowNull: false
     },
     plantDate: {
+      allowNull: false,
       type: Sequelize.DATEONLY
     },
     images: {
       type: Sequelize.ARRAY(Sequelize.STRING)
+    },
+    stage:{
+      type: Sequelize.STRING,
+      defaultValue: "SEED"
     },
     createdAt: {
       allowNull: false,

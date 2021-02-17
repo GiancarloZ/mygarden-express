@@ -73,6 +73,13 @@ exports.signup = (req, res) => {
   
   exports.signin = (req, res) => {
     // console.log(req.body)
+    if (!req.body.email || !req.body.password) {
+      res.status(400).send({
+        message: "Email or Password can not be empty!"
+      });
+      return;
+    }
+
     User
     .findOne({
       where: {
@@ -97,7 +104,7 @@ exports.signup = (req, res) => {
         }
       })
     })
-    .catch((error) => res.status(400).send(error));
+    .catch((error) => res.status(400).send(error.message));
   };
   
   exports.persist = async (req, res) => {
@@ -115,7 +122,7 @@ exports.signup = (req, res) => {
             include: [
               {
                 model: Role,
-                as: "Roles",
+                as: "roles",
                 attributes: ["name"],
                 through: {
                   attributes: [],

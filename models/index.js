@@ -41,32 +41,31 @@ db.userRole = require("../models/userRole.js")(sequelize, Sequelize);
 db.garden = require("../models/garden.js")(sequelize, Sequelize);
 db.seed = require("../models/seed.js")(sequelize, Sequelize);
 db.plant = require("../models/plant.js")(sequelize, Sequelize);
+db.plantImage = require("../models/plantImage.js")(sequelize, Sequelize);
 
 // list associations below
 db.role.belongsToMany(db.user, {
-  through: "UserRole",
+  through: "userRole",
   foreignKey: "roleId",
   otherKey: "userId"
 });
 db.user.belongsToMany(db.role, {
-  through: "UserRole",
+  through: "userRole",
   foreignKey: "userId",
   otherKey: "roleId"
 });
+
 db.seed.belongsToMany(db.garden, {
-  through: "Plant",
-  as: "gardens",
+  through: "plant",
   foreignKey: "seedId",
-  // otherKey: "gardenId"
+  otherKey: "gardenId"
 });
 db.garden.belongsToMany(db.seed, {
-  through: "Plant",
-  as: "seeds",
+  through: "plant",
+  as: "planted",
   foreignKey: "gardenId",
-  // otherKey: "seedId"
+  otherKey: "seedId"
 });
-// db.plant.belongsTo(db.garden, {foreignKey: "gardenId"})
-// db.plant.belongsTo(db.seed, {foreignKey: "seedId"})
 
 db.user.hasMany(db.garden, {
   foreignKey: 'userId'
@@ -74,12 +73,12 @@ db.user.hasMany(db.garden, {
 db.garden.belongsTo(db.user, {
   foreignKey: "userId"
 });
+
 db.user.hasMany(db.seed, {
-  foreignKey: "userId"
+  foreignKey: "userId",
 });
-db.seed.belongsTo(db.user,{
-  foreignKey: "userId"
-});
+db.seed.belongsTo(db.user);
+db.plantImage.belongsTo(db.plant);
 
 
 

@@ -1,5 +1,5 @@
 const db = require("../models");
-const Garden = db.Garden;
+const Garden = db.garden;
 const Seed = db.seed; 
 const Op = db.Sequelize.Op;
 const Plant = db.plant;
@@ -43,16 +43,16 @@ exports.findAll = (req, res) => {
   
     Garden.findAll( 
       {
-    //   include: [
-    //     {
-    //       model: User,
-    //       as: "Users",
-    //       attributes: ["id", "firstName", "lastName", "email"],
-    //       through: {
-    //         attributes: [],
-    //       }
-    //     },
-    //   ],
+      include: [
+        {
+          model: Seed,
+          as: "planted",
+          attributes: ["title"],
+          through: {
+            attributes: [],
+          }
+        },
+      ],
       }
       )
       .then(data => {
@@ -61,7 +61,7 @@ exports.findAll = (req, res) => {
       .catch(err => {
         res.status(500).send({
           message:
-            err || "Some error occurred while retrieving Gardens."
+            err.message || "Some error occurred while retrieving Gardens."
         });
       });
 };
@@ -88,7 +88,7 @@ exports.findOne = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: err
+          message: err.message
         });
       });
 };

@@ -1,21 +1,23 @@
 module.exports = (sequelize, Sequelize) => {
-  const Garden = sequelize.define("garden", {
+  const plantImage = sequelize.define("plantImage", {
     id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
       type: Sequelize.INTEGER
     },
-    name:{
-      type: Sequelize.STRING,
-      allowNull: false
+    img: {
+      type: Sequelize.STRING
     },
-    userId: {
-      type: Sequelize.INTEGER,
-      allowNull: false
+    title: {
+      type: Sequelize.STRING
     },
-    images: {
-      type: Sequelize.ARRAY(Sequelize.STRING)
+    plantId: {
+      allowNull: false,
+      type: Sequelize.INTEGER
+    },
+    stage: {
+      type: Sequelize.STRING
     },
     createdAt: {
       allowNull: false,
@@ -26,8 +28,8 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.DATE
     }
   });
-  Garden.associate = models => {
+  plantImage.associate = models => {
    
   };
-  return Garden;
+  return plantImage;
 };

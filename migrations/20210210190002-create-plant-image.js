@@ -1,33 +1,25 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('plants', {
+    await queryInterface.createTable('plantImages', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      seedId: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        allowNull: false
+      img: {
+        type: Sequelize.STRING
       },
-      gardenId: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        allowNull: false
+      title: {
+        type: Sequelize.STRING
       },
-      plantDate: {
+      plantId: {
         allowNull: false,
-        type: Sequelize.DATEONLY
+        type: Sequelize.INTEGER
       },
-      images: {
-        type: Sequelize.ARRAY(Sequelize.STRING)
-      },
-      stage:{
-        type: Sequelize.STRING,
-        defaultValue: "SEED"
+      stage: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -40,6 +32,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('plants');
+    await queryInterface.dropTable('plantImages');
   }
 };
