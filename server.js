@@ -7,7 +7,7 @@ const db = require("./models");
 // const OrderController = require("./app/controllers/order.controller");
 // const ProductController = require("./app/controllers/product.controller");
 const app = express();
-
+app.disable('x-powered-by');
 var corsOptions = {
   origin: "*",
 };

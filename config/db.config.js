@@ -1,7 +1,7 @@
 module.exports = {
     HOST: "localhost",
-    USER: "gzaba",
-    PASSWORD: "nachoz",
+    USER: process.env.DATABASE_USER,
+    PASSWORD: process.env.DATABASE_PASSWORD,
     DB: "my_garden_express_api_development",
     dialect: "postgres",
     pool: {
