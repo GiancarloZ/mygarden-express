@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "postinstall": "patch-package",
+    "heroku-postbuild": "patch-package"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "express": "^4.17.1",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
+    "patch-package": "^6.4.7",
     "pg": "^8.5.1",
     "sequelize": "^6.3.5"
   },
