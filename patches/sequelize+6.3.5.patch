@@ -1,0 +1,389 @@
+diff --git a/node_modules/sequelize/LICENSE b/node_modules/sequelize/LICENSE
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/README.md b/node_modules/sequelize/README.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/index.js b/node_modules/sequelize/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/.sequelize.js.swp b/node_modules/sequelize/lib/.sequelize.js.swp
+new file mode 100755
+index 0000000..3619d7e
+Binary files /dev/null and b/node_modules/sequelize/lib/.sequelize.js.swp differ
+diff --git a/node_modules/sequelize/lib/associations/base.js b/node_modules/sequelize/lib/associations/base.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/associations/belongs-to-many.js b/node_modules/sequelize/lib/associations/belongs-to-many.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/associations/belongs-to.js b/node_modules/sequelize/lib/associations/belongs-to.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/associations/has-many.js b/node_modules/sequelize/lib/associations/has-many.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/associations/has-one.js b/node_modules/sequelize/lib/associations/has-one.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/associations/helpers.js b/node_modules/sequelize/lib/associations/helpers.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/associations/index.js b/node_modules/sequelize/lib/associations/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/associations/mixin.js b/node_modules/sequelize/lib/associations/mixin.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/data-types.js b/node_modules/sequelize/lib/data-types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/deferrable.js b/node_modules/sequelize/lib/deferrable.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/abstract/connection-manager.js b/node_modules/sequelize/lib/dialects/abstract/connection-manager.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/abstract/index.js b/node_modules/sequelize/lib/dialects/abstract/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/abstract/query-generator.js b/node_modules/sequelize/lib/dialects/abstract/query-generator.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/abstract/query-generator/helpers/quote.js b/node_modules/sequelize/lib/dialects/abstract/query-generator/helpers/quote.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/abstract/query-generator/operators.js b/node_modules/sequelize/lib/dialects/abstract/query-generator/operators.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/abstract/query-generator/transaction.js b/node_modules/sequelize/lib/dialects/abstract/query-generator/transaction.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/abstract/query-interface.js b/node_modules/sequelize/lib/dialects/abstract/query-interface.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/abstract/query.js b/node_modules/sequelize/lib/dialects/abstract/query.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js b/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mariadb/data-types.js b/node_modules/sequelize/lib/dialects/mariadb/data-types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mariadb/index.js b/node_modules/sequelize/lib/dialects/mariadb/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mariadb/query-generator.js b/node_modules/sequelize/lib/dialects/mariadb/query-generator.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mariadb/query.js b/node_modules/sequelize/lib/dialects/mariadb/query.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mssql/async-queue.js b/node_modules/sequelize/lib/dialects/mssql/async-queue.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mssql/connection-manager.js b/node_modules/sequelize/lib/dialects/mssql/connection-manager.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mssql/data-types.js b/node_modules/sequelize/lib/dialects/mssql/data-types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mssql/index.js b/node_modules/sequelize/lib/dialects/mssql/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mssql/query-generator.js b/node_modules/sequelize/lib/dialects/mssql/query-generator.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mssql/query-interface.js b/node_modules/sequelize/lib/dialects/mssql/query-interface.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mssql/query.js b/node_modules/sequelize/lib/dialects/mssql/query.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mysql/connection-manager.js b/node_modules/sequelize/lib/dialects/mysql/connection-manager.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mysql/data-types.js b/node_modules/sequelize/lib/dialects/mysql/data-types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mysql/index.js b/node_modules/sequelize/lib/dialects/mysql/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mysql/query-generator.js b/node_modules/sequelize/lib/dialects/mysql/query-generator.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mysql/query-interface.js b/node_modules/sequelize/lib/dialects/mysql/query-interface.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/mysql/query.js b/node_modules/sequelize/lib/dialects/mysql/query.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/parserStore.js b/node_modules/sequelize/lib/dialects/parserStore.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/postgres/connection-manager.js b/node_modules/sequelize/lib/dialects/postgres/connection-manager.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/postgres/data-types.js b/node_modules/sequelize/lib/dialects/postgres/data-types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/postgres/hstore.js b/node_modules/sequelize/lib/dialects/postgres/hstore.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/postgres/index.js b/node_modules/sequelize/lib/dialects/postgres/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/postgres/query-generator.js b/node_modules/sequelize/lib/dialects/postgres/query-generator.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/postgres/query-interface.js b/node_modules/sequelize/lib/dialects/postgres/query-interface.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/postgres/query.js b/node_modules/sequelize/lib/dialects/postgres/query.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/postgres/range.js b/node_modules/sequelize/lib/dialects/postgres/range.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/sqlite/connection-manager.js b/node_modules/sequelize/lib/dialects/sqlite/connection-manager.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/sqlite/data-types.js b/node_modules/sequelize/lib/dialects/sqlite/data-types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/sqlite/index.js b/node_modules/sequelize/lib/dialects/sqlite/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/sqlite/query-generator.js b/node_modules/sequelize/lib/dialects/sqlite/query-generator.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/sqlite/query-interface.js b/node_modules/sequelize/lib/dialects/sqlite/query-interface.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/dialects/sqlite/query.js b/node_modules/sequelize/lib/dialects/sqlite/query.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/aggregate-error.js b/node_modules/sequelize/lib/errors/aggregate-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/association-error.js b/node_modules/sequelize/lib/errors/association-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/base-error.js b/node_modules/sequelize/lib/errors/base-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/bulk-record-error.js b/node_modules/sequelize/lib/errors/bulk-record-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/connection-error.js b/node_modules/sequelize/lib/errors/connection-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/connection/access-denied-error.js b/node_modules/sequelize/lib/errors/connection/access-denied-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/connection/connection-acquire-timeout-error.js b/node_modules/sequelize/lib/errors/connection/connection-acquire-timeout-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/connection/connection-refused-error.js b/node_modules/sequelize/lib/errors/connection/connection-refused-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/connection/connection-timed-out-error.js b/node_modules/sequelize/lib/errors/connection/connection-timed-out-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/connection/host-not-found-error.js b/node_modules/sequelize/lib/errors/connection/host-not-found-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/connection/host-not-reachable-error.js b/node_modules/sequelize/lib/errors/connection/host-not-reachable-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/connection/invalid-connection-error.js b/node_modules/sequelize/lib/errors/connection/invalid-connection-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/database-error.js b/node_modules/sequelize/lib/errors/database-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/database/exclusion-constraint-error.js b/node_modules/sequelize/lib/errors/database/exclusion-constraint-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/database/foreign-key-constraint-error.js b/node_modules/sequelize/lib/errors/database/foreign-key-constraint-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/database/timeout-error.js b/node_modules/sequelize/lib/errors/database/timeout-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/database/unknown-constraint-error.js b/node_modules/sequelize/lib/errors/database/unknown-constraint-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/eager-loading-error.js b/node_modules/sequelize/lib/errors/eager-loading-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/empty-result-error.js b/node_modules/sequelize/lib/errors/empty-result-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/index.js b/node_modules/sequelize/lib/errors/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/instance-error.js b/node_modules/sequelize/lib/errors/instance-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/optimistic-lock-error.js b/node_modules/sequelize/lib/errors/optimistic-lock-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/query-error.js b/node_modules/sequelize/lib/errors/query-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/sequelize-scope-error.js b/node_modules/sequelize/lib/errors/sequelize-scope-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/validation-error.js b/node_modules/sequelize/lib/errors/validation-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/errors/validation/unique-constraint-error.js b/node_modules/sequelize/lib/errors/validation/unique-constraint-error.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/hooks.js b/node_modules/sequelize/lib/hooks.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/index-hints.js b/node_modules/sequelize/lib/index-hints.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/instance-validator.js b/node_modules/sequelize/lib/instance-validator.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/model-manager.js b/node_modules/sequelize/lib/model-manager.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/model.js b/node_modules/sequelize/lib/model.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/operators.js b/node_modules/sequelize/lib/operators.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/query-types.js b/node_modules/sequelize/lib/query-types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/sequelize.js b/node_modules/sequelize/lib/sequelize.js
+old mode 100644
+new mode 100755
+index 05604cd..82154c0
+--- a/node_modules/sequelize/lib/sequelize.js
++++ b/node_modules/sequelize/lib/sequelize.js
+@@ -182,7 +182,8 @@ class Sequelize {
+       config = {};
+       options = username || {};
+ 
+-      const urlParts = url.parse(arguments[0], true);
++      const urlParts = url.parse(options.use_env_variable, true);
++      // const urlParts = url.parse(arguments[0], true);
+ 
+       options.dialect = urlParts.protocol.replace(/:$/, '');
+       options.host = urlParts.hostname;
+diff --git a/node_modules/sequelize/lib/sql-string.js b/node_modules/sequelize/lib/sql-string.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/table-hints.js b/node_modules/sequelize/lib/table-hints.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/transaction.js b/node_modules/sequelize/lib/transaction.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/utils.js b/node_modules/sequelize/lib/utils.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/utils/class-to-invokable.js b/node_modules/sequelize/lib/utils/class-to-invokable.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/utils/deprecations.js b/node_modules/sequelize/lib/utils/deprecations.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/utils/join-sql-fragments.js b/node_modules/sequelize/lib/utils/join-sql-fragments.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/utils/logger.js b/node_modules/sequelize/lib/utils/logger.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/lib/utils/validator-extras.js b/node_modules/sequelize/lib/utils/validator-extras.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/index.d.ts b/node_modules/sequelize/types/index.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/associations/base.d.ts b/node_modules/sequelize/types/lib/associations/base.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts b/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/associations/belongs-to.d.ts b/node_modules/sequelize/types/lib/associations/belongs-to.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/associations/has-many.d.ts b/node_modules/sequelize/types/lib/associations/has-many.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/associations/has-one.d.ts b/node_modules/sequelize/types/lib/associations/has-one.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/associations/index.d.ts b/node_modules/sequelize/types/lib/associations/index.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/connection-manager.d.ts b/node_modules/sequelize/types/lib/connection-manager.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/data-types.d.ts b/node_modules/sequelize/types/lib/data-types.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/deferrable.d.ts b/node_modules/sequelize/types/lib/deferrable.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/errors.d.ts b/node_modules/sequelize/types/lib/errors.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/hooks.d.ts b/node_modules/sequelize/types/lib/hooks.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/index-hints.d.ts b/node_modules/sequelize/types/lib/index-hints.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/instance-validator.d.ts b/node_modules/sequelize/types/lib/instance-validator.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/model-manager.d.ts b/node_modules/sequelize/types/lib/model-manager.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/model.d.ts b/node_modules/sequelize/types/lib/model.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/operators.d.ts b/node_modules/sequelize/types/lib/operators.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/query-interface.d.ts b/node_modules/sequelize/types/lib/query-interface.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/query-types.d.ts b/node_modules/sequelize/types/lib/query-types.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/sequelize.d.ts b/node_modules/sequelize/types/lib/sequelize.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/sql-string.d.ts b/node_modules/sequelize/types/lib/sql-string.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/table-hints.d.ts b/node_modules/sequelize/types/lib/table-hints.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/transaction.d.ts b/node_modules/sequelize/types/lib/transaction.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/utils.d.ts b/node_modules/sequelize/types/lib/utils.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/utils/logger.d.ts b/node_modules/sequelize/types/lib/utils/logger.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/lib/utils/validator-extras.d.ts b/node_modules/sequelize/types/lib/utils/validator-extras.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/sequelize/types/type-helpers/set-required.d.ts b/node_modules/sequelize/types/type-helpers/set-required.d.ts
+old mode 100644
+new mode 100755
