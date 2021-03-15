@@ -4,12 +4,12 @@ module.exports = {
     dialect: "postgres",
     password: "nachoz"
   },
-  "test": {
-    "database": "my_garden_express_api_test",
-    "dialect": "postgres"
+  test: {
+    database: "my_garden_express_api_test",
+    dialect: "postgres"
   },
   production: {
-    use_env_variable: process.env.DATABASE_URL,
+    use_env_variable: DATABASE_URL,
     dialect: "postgres",
     dialectOptions: {
       ssl: {
