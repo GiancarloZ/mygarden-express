@@ -1,16 +1,16 @@
 require('dotenv').config();
 module.exports = {
   development: {
-    database: "my_garden_express_api_development",
+    database: process.env.DATABASE,
     dialect: "postgres",
-    password: 'nachoz'
+    password: process.env.DATABASE_PASSWORD
   },
   test: {
     database: process.env.DATABASE,
     dialect: "postgres"
   },
   production: {
-    use_env_variable: DATABASE_URL,
+    // use_env_variable: DATABASE_URL,
     dialect: "postgres",
     dialectOptions: {
       ssl: {
