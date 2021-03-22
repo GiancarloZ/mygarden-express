@@ -1,11 +1,12 @@
+require('dotenv').config();
 module.exports = {
   development: {
     database: "my_garden_express_api_development",
     dialect: "postgres",
-    password: "nachoz"
+    password: 'nachoz'
   },
   test: {
-    database: "my_garden_express_api_test",
+    database: process.env.DATABASE,
     dialect: "postgres"
   },
   production: {
