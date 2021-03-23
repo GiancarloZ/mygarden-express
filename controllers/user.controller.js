@@ -60,7 +60,8 @@ exports.findOne = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Error retrieving User with id=" + id
+          message:
+            err.message  || "Error retrieving User with id=" + id
         });
       });
 };
@@ -85,7 +86,8 @@ exports.update = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Error updating User with id=" + id
+          message: 
+          err.message || "Error updating User with id=" + id
         });
       });
 };
@@ -110,7 +112,8 @@ exports.delete = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Could not delete User with id=" + id
+          message: 
+          err.message || "Could not delete User with id=" + id
         });
       });
 };

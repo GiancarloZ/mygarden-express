@@ -82,7 +82,7 @@ exports.findOne = (req, res) => {
     const id = req.params.id;
 
     Seed.findByPk(id, {
-      include: User
+      // include: User
       // {
       //   model: User,
       //   attributes: ["email"],
@@ -121,7 +121,8 @@ exports.update = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Error updating Seed with id=" + id
+          message: 
+          err.message || "Error updating Seed with id=" + id
         });
       });
 };
@@ -146,7 +147,8 @@ exports.delete = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Could not delete Seed with id=" + id
+          message: 
+          err.message || "Could not delete Seed with id=" + id
         });
       });
 };

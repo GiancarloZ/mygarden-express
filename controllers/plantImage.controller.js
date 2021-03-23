@@ -89,7 +89,7 @@ exports.findOne = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: err
+          message: err.message
         });
       });
 };
@@ -114,7 +114,8 @@ exports.update = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Error updating PlantImage with id=" + id
+          message: 
+          err.message || "Error updating PlantImage with id=" + id
         });
       });
 };
@@ -139,7 +140,8 @@ exports.delete = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Could not delete PlantImage with id=" + id
+          message: 
+          err.message || "Could not delete PlantImage with id=" + id
         });
       });
 };

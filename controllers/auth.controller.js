@@ -42,7 +42,8 @@ exports.signup = (req, res) => {
             })
             .catch(err => {
                 res.status(500).send({
-                message: "Error retrieving User with id=" + data.id
+                message: 
+                err.message || "Error retrieving User with id=" + data.id
                 });
             });        
         } else {
@@ -57,7 +58,8 @@ exports.signup = (req, res) => {
             })
             .catch(err => {
                 res.status(500).send({
-                message: "Error retrieving User with id=" + data.catchid
+                message: 
+                err.message || "Error retrieving User with id=" + data.catchid
                 });
             });
         }
@@ -135,7 +137,8 @@ exports.signup = (req, res) => {
             })
             .catch(err => {
               res.status(500).send({
-                message: "Error retrieving User with id=" + id
+                message: 
+                err.message || "Error retrieving User with id=" + id
               });
             });
         } else {
