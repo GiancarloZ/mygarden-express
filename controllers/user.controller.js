@@ -45,7 +45,6 @@ exports.findOne = (req, res) => {
       include: [
         {
           model: Role,
-          as: "Roles",
           attributes: ["name"],
           through: {
             attributes: [],
