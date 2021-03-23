@@ -111,7 +111,8 @@ exports.update = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Error updating Role with id=" + id
+          message: 
+          err.message || "Error updating Role with id=" + id
         });
       });
 };
@@ -136,7 +137,8 @@ exports.delete = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Could not delete Role with id=" + id
+          message:
+          err.message || "Could not delete Role with id=" + id
         });
       });
 };
